@@ -18,9 +18,11 @@ using namespace std ;
 Rcpp::DataFrame noweiAvg(std::string path,std::string preStr="preno2", std::string idStr="id",std::string dateStr="s_date") {
   std::vector<std::string> flist=listdir(path);
   std::unordered_map <std::string, vector<double>> keystats;
-
-  for(unsigned int i=2;i<flist.size();i++){
+  string csvpattern=".csv";
+  for(unsigned int i=0;i<flist.size();i++){
     //Rcout<<"m:"<<i<<"..."<<endl ;
+    if (flist[i].find(csvpattern)==std::string::npos)
+      continue  ;
     string fpath=path+"/"+flist[i];
     Rcpp::DataFrame adf=getCSV(fpath);
     NumericVector prev=adf[preStr];

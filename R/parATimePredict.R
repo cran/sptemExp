@@ -25,8 +25,6 @@
 #' @export parATimePredict
 #'
 parATimePredict=function(mdPath,newPnts,cols=NA,bnd,c=1,outPath="/tmp",idF="siteid",ridF="rid"){
-  # mdPath="/home/lpola/pm25model/t_1_models"; tid=dno;newPnts=pntlayer;
-  #  c=5;outPath="/tmp";idF="siteid"; ridF="rid"
 
   mfiles=list.files(mdPath)
   mfiles=grep("^m_.*.rds$",mfiles,value=TRUE)

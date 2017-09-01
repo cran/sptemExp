@@ -1,4 +1,4 @@
-c666a6839aa1035828787b9fd07a0331 *DESCRIPTION
+771e162c7934905c5eaad2cdbb6cd955 *DESCRIPTION
 bf09f6fa3c4d0ab79be52ae2c5940a5a *NAMESPACE
 bba1c24b60a3f1adeffb43d096e1db7c *R/GetARegionBK.R
 614c59112d4ae5860b550863feb2ffa0 *R/Points2Raster.R
@@ -16,13 +16,13 @@ b7358f6951eec0f1b98d2fa7d55e6f3d *R/extractVTIF.R
 53cf9c6b9ddc59023bf8c12f5f12beea *R/fillNASVD.R
 b5bd961d9f12ce7435f3e1bb539e9a69 *R/fillNASVDSer.R
 302d013b81b0565cd6fc187068232b7f *R/genRaster.R
-363d7ee2fae5a6a59f0ed66ecec7eb02 *R/genTBasisFun.R
+94fad3369842e8ae3076a8cefea2bce0 *R/genTBasisFun.R
 b47fcf23a35819859774ba9e86238f7e *R/getPolyMMean.R
 8cb532d1b6c808993335206eb6f83091 *R/getRidbytpoly.R
 76ad80cf3884dd1e4f8522f2a489b110 *R/getTidBKMean.R
 39ffe6b97cacaee533c876aaa93589f9 *R/gtifRst.R
 fe06201451d94a8310b98ca97e9b50e6 *R/inter2conOpt.R
-92a833dfde5e9fd67ae22d864a5d11ee *R/parATimePredict.R
+e70737d696cb3ab39fbc00fc210e6ae5 *R/parATimePredict.R
 793651b8db7228727ce69a78efa67134 *R/parSpModel.R
 f68b35a9f8b8d6c6a64373c89568130e *R/perMdPrediction.R
 46f70645fbc8e0c414c89701cb7232cd *R/pol_season_trends.R
@@ -34,7 +34,7 @@ b1bc0ee2164e63f3e2494089e9244be4 *R/samplepnt.R
 a6a655231b55015ebe546efca224d96f *R/spointspre.R
 df931087ab72d13b5752d741445b2587 *R/tpolygonsByBorder.R
 222cf0ac938309a6dd59424e53b261d9 *R/trainsample.R
-cd71638807169c4bde6a85e4d3a5bbe8 *R/weiA2Ens.R
+9aa475fb00893fafb414b5fc696ac937 *R/weiA2Ens.R
 6b723a09602113c00e54d60ffbc9ef37 *README
 cf7b6731d57ef4b65da50555a508a8bb *data/allPre500.rda
 b013275063234f9f20016a63cd895224 *data/bnd.rda
@@ -69,7 +69,7 @@ e8665daf136f572d5a92c41620e5dfbb *man/getTBasisFun.Rd
 8f60225e994649695aab1c3106644eff *man/getTidBKMean.Rd
 b30fb8a88386c0b79410c1cdfc15dced *man/gtifRst.Rd
 9c5ee21c1d30a6208a2fd351af81986e *man/inter2conOpt.Rd
-0a9a8d077093d67b94f78d5dc6e9d148 *man/noweiAvg.Rd
+3c324c7c0441f52c320e84f2592a1c1e *man/noweiAvg.Rd
 513c20e5819640500bb91b31956c6781 *man/parATimePredict.Rd
 8aeb14d513696ceb26bf0aca4e9a6910 *man/parSpModel.Rd
 c9569cff854d30b10f61a173961d121d *man/parTemporalBImp.Rd
@@ -92,7 +92,7 @@ ae764ae3cc6bae09c88d42a5d944f978 *man/weiA2Ens.Rd
 638b5f87481e7876e33875b73ca58f58 *src/bKriging.cpp
 b5a729adc628cdad97d2bd0cbf1a3a0c *src/bk_lib.cpp
 40b5aed7756ed1dc64ad7017dd114b0f *src/bk_lib.h
-22dd0b2eea8a48be725c2ecb668f0f48 *src/noweiAvg.cpp
+c613950df6270affbeaff5c0a2864a37 *src/noweiAvg.cpp
 ff932842e1cd244e999fab9c4898a4c9 *src/weightedstat.cpp
 b7809d2cf89355b882e5bb98966a6c57 *src/wm_lib.cpp
 217deb7315c07863cd0a201283907070 *src/wm_lib.h

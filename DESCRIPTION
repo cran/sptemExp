@@ -1,7 +1,7 @@
 Package: sptemExp
 Type: Package
 Title: Constrained Spatiotemporal Mixed Models for Exposure Estimation
-Version: 0.1.0
+Version: 0.1.1
 Author: Lianfa Li,
 Maintainer: Lianfa Li <lspatial@gmail.com>
 Description: The approach of constrained spatiotemporal mixed models is to make reliable estimation of air pollutant concentrations at high spatiotemporal
@@ -29,6 +29,6 @@ Encoding: UTF-8
 LazyData: true
 NeedsCompilation: yes
 RoxygenNote: 6.0.1
-Packaged: 2017-08-28 21:01:20 UTC; lpola
+Packaged: 2017-08-31 21:52:41 UTC; lpola
 Repository: CRAN
-Date/Publication: 2017-08-29 12:45:00 UTC
+Date/Publication: 2017-09-01 08:38:14 UTC

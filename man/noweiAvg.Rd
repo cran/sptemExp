@@ -34,7 +34,6 @@ pPath=paste(dPath,"/preds",sep="")
 unlink(pPath, recursive=TRUE, force=TRUE)
 dir.create(pPath)
 
-
 nr=2000
 for(i in c(1:80)){ # i =1
   dset=data.frame(gid=c(1:nr),rid=sample(c(1:30),size=nr,replace=TRUE))

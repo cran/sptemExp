@@ -1,7 +1,6 @@
 
 
 getTBasisFun=function(serDf,idStr,dateStr,valStr,df=25,n.basis=2,tbPath=NA){
-  #serDf=shdSeries2014;idStr="siteid";dateStr="date";valStr="obs";df=10;n.basis=2;tbPath="/tmp"
 
   basisFunc=SpatioTemporal::calcSmoothTrends(obs=log(serDf[,valStr]), date =serDf[,dateStr],
                              ID = serDf[,idStr],df=df,n.basis=n.basis,cv=TRUE)

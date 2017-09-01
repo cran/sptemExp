@@ -24,7 +24,9 @@ weiA2Ens=function(pPath,mFile,metrF="rmse",preF="pre",idF="gid",dateF=NA){
     mmetrics$mid=mmetrics$imodel
   }
   mmetrics$rmse=1/mmetrics$rmse
-  tmpPath=paste("/tmp/t_",as.numeric(Sys.time()),"_models_re.csv",sep="")
+
+  tmpPath=paste(tempdir(),"/t_",as.numeric(Sys.time()),"_models_re.csv",sep="")
+
   write.csv(mmetrics[,c("mid","r2","rmse")],file=tmpPath,row.names=FALSE)
   if(inherits(dateF,"logical"))
      dateF=idF
