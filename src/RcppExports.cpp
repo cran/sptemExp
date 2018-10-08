@@ -35,6 +35,30 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// exeCluster
+Rcpp::NumericVector exeCluster(Rcpp::DataFrame samples, double tdist);
+RcppExport SEXP _sptemExp_exeCluster(SEXP samplesSEXP, SEXP tdistSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::DataFrame >::type samples(samplesSEXP);
+    Rcpp::traits::input_parameter< double >::type tdist(tdistSEXP);
+    rcpp_result_gen = Rcpp::wrap(exeCluster(samples, tdist));
+    return rcpp_result_gen;
+END_RCPP
+}
+// getClusterCt
+Rcpp::DataFrame getClusterCt(Rcpp::DataFrame samples, Rcpp::NumericVector clsInf);
+RcppExport SEXP _sptemExp_getClusterCt(SEXP samplesSEXP, SEXP clsInfSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::DataFrame >::type samples(samplesSEXP);
+    Rcpp::traits::input_parameter< Rcpp::NumericVector >::type clsInf(clsInfSEXP);
+    rcpp_result_gen = Rcpp::wrap(getClusterCt(samples, clsInf));
+    return rcpp_result_gen;
+END_RCPP
+}
 // weightedstat
 Rcpp::DataFrame weightedstat(std::string path, std::string modelpath, std::string metric, std::string preStr, std::string idStr, std::string dateStr);
 RcppExport SEXP _sptemExp_weightedstat(SEXP pathSEXP, SEXP modelpathSEXP, SEXP metricSEXP, SEXP preStrSEXP, SEXP idStrSEXP, SEXP dateStrSEXP) {
@@ -55,6 +79,8 @@ END_RCPP
 static const R_CallMethodDef CallEntries[] = {
     {"_sptemExp_bKriging", (DL_FUNC) &_sptemExp_bKriging, 5},
     {"_sptemExp_noweiAvg", (DL_FUNC) &_sptemExp_noweiAvg, 4},
+    {"_sptemExp_exeCluster", (DL_FUNC) &_sptemExp_exeCluster, 2},
+    {"_sptemExp_getClusterCt", (DL_FUNC) &_sptemExp_getClusterCt, 2},
     {"_sptemExp_weightedstat", (DL_FUNC) &_sptemExp_weightedstat, 6},
     {NULL, NULL, 0}
 };

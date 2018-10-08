@@ -9,6 +9,14 @@ noweiAvg <- function(path, preStr = "preno2", idStr = "id", dateStr = "s_date") 
     .Call('_sptemExp_noweiAvg', PACKAGE = 'sptemExp', path, preStr, idStr, dateStr)
 }
 
+exeCluster <- function(samples, tdist) {
+    .Call('_sptemExp_exeCluster', PACKAGE = 'sptemExp', samples, tdist)
+}
+
+getClusterCt <- function(samples, clsInf) {
+    .Call('_sptemExp_getClusterCt', PACKAGE = 'sptemExp', samples, clsInf)
+}
+
 weightedstat <- function(path, modelpath, metric = "r2", preStr = "preno2", idStr = "id", dateStr = "s_date") {
     .Call('_sptemExp_weightedstat', PACKAGE = 'sptemExp', path, modelpath, metric, preStr, idStr, dateStr)
 }

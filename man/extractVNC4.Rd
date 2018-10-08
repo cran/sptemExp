@@ -23,14 +23,13 @@ Lianfa Li, \email{lspatial@gmail.com}
 }
 
 \examples{
-
+\dontrun{
 data("samplepnt")
 nc4File=file.path(system.file(package = "sptemExp"), "extdata", "ancdata.nc4")
 ncin0=ncdf4::nc_open(nc4File)
 extRes=extractVNC4(samplepnt,ncin0,"TLML")
 extRes
-
-
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

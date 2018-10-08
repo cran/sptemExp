@@ -6,6 +6,8 @@ Lianfa Li (Email: lspatial@gmail.com)
 
 It is an ensemble spatiotemporal modeling tool with constrained optimization and also provides the functionality of grid mapping of air pollutants and parallel computing.
 
+Li, L., Zhang, J., Meng, X., Fang, Y., Ge, Y., Wang, J., Wang, C., Wu, J., Kan, H. (2018) <doi.org/10.1016/j.rse.2018.09.001>
+
 Li, L., Lurmann, F., Habre, R., Urman, R., Rappaport, E., Ritz, B., Chen, J., Gilliland, F., Wu, J., (2017)<doi:10.1021/acs.est.7b01864>
 
 Specifically, it includes the following functionality:
