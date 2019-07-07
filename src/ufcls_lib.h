@@ -25,6 +25,8 @@ int find2(int k,vector<int> & p);
 bool unionP(int a,int b,vector<int> & p);
 distQ  getDistsInf(vector<pair<double,double>> & pnts);
 vector<int> clustering(vector<pair<double,double>> & pnts,double tarDist);
+distQ  getDistsInf1D(vector<double> & pnts);
+vector<int> clustering1D(vector<double> & pnts,double tarDist);
 vector<pair<int,pair<double,double>>> getClsCenter1(vector<pair<double,double>> & pnts, vector<int> & cls);
 void getRandPnts(vector<pair<double,double>> & pnts,int lim,int x1,int x2,int y1,int y2,int sz);
 

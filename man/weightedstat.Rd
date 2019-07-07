@@ -44,6 +44,6 @@ mfile=paste(dPath,"/model_metrics.csv",sep="")
 write.csv(modelsMetrics,file=mfile,row.names = FALSE)
 res=weightedstat(pPath,modelpath=mfile,metric="rmse2",preStr="pre",idStr="gid",dateStr="gid")
 
-
-
 }
+
+\keyword{weigted_statistics}

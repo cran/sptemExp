@@ -24,5 +24,6 @@ x=samplepnt
 sidepoly=prnside
 tpoly=tpolygonsByBorder(x,sidepoly)$tpolys
 raster::plot(tpoly)
-
 }
+
+\keyword{ polygons }% __ONLY ONE__ keyword per line

@@ -35,6 +35,18 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// exeCluster1D
+Rcpp::NumericVector exeCluster1D(Rcpp::NumericVector samples, double tdist);
+RcppExport SEXP _sptemExp_exeCluster1D(SEXP samplesSEXP, SEXP tdistSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::NumericVector >::type samples(samplesSEXP);
+    Rcpp::traits::input_parameter< double >::type tdist(tdistSEXP);
+    rcpp_result_gen = Rcpp::wrap(exeCluster1D(samples, tdist));
+    return rcpp_result_gen;
+END_RCPP
+}
 // exeCluster
 Rcpp::NumericVector exeCluster(Rcpp::DataFrame samples, double tdist);
 RcppExport SEXP _sptemExp_exeCluster(SEXP samplesSEXP, SEXP tdistSEXP) {
@@ -79,6 +91,7 @@ END_RCPP
 static const R_CallMethodDef CallEntries[] = {
     {"_sptemExp_bKriging", (DL_FUNC) &_sptemExp_bKriging, 5},
     {"_sptemExp_noweiAvg", (DL_FUNC) &_sptemExp_noweiAvg, 4},
+    {"_sptemExp_exeCluster1D", (DL_FUNC) &_sptemExp_exeCluster1D, 2},
     {"_sptemExp_exeCluster", (DL_FUNC) &_sptemExp_exeCluster, 2},
     {"_sptemExp_getClusterCt", (DL_FUNC) &_sptemExp_getClusterCt, 2},
     {"_sptemExp_weightedstat", (DL_FUNC) &_sptemExp_weightedstat, 6},

@@ -19,5 +19,5 @@ rSquared(obs, res)
   res=obs-pre
   rSquared(obs,res)
 }
-\keyword{ ~r2 }% use one of  RShowDoc("KEYWORDS")
-\keyword{ ~rquared }% __ONLY ONE__ keyword per line
+\keyword{ r2 }% use one of  RShowDoc("KEYWORDS")
+\keyword{ rquared }% __ONLY ONE__ keyword per line

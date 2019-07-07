@@ -36,4 +36,4 @@ regionmmean=getPolyMMean(tpolys, samplepnt, shdSeries2014,"siteid", "rid", "obs"
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 \keyword{ Regional mean}% use one of  RShowDoc("KEYWORDS")
-\keyword{ air pollution }% __ONLY ONE__ keyword per line
+\keyword{ air_pollution }% __ONLY ONE__ keyword per line

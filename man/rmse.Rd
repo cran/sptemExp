@@ -20,4 +20,4 @@ rmse(obs, pre)
 
 }
 
-\keyword{ ~rmse }% __ONLY ONE__ keyword per line
+\keyword{ rmse }% __ONLY ONE__ keyword per line

@@ -68,3 +68,5 @@ parATimePredict(amodelPath,newPnts=shd140401pcovs_part,
 }
 
 }
+
+\keyword{ timeseries }

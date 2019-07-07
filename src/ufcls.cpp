@@ -25,6 +25,13 @@ vector<pair<double,double>> getPairVec0(Rcpp::DataFrame df){
 }
 
 // [[Rcpp::export]]
+Rcpp::NumericVector exeCluster1D(Rcpp::NumericVector samples, double tdist){
+  std::vector<double> samP = as<std::vector<double> >(samples);
+  vector<int> clsInf=clustering1D(samP,tdist);
+  return wrap(clsInf);
+}
+
+// [[Rcpp::export]]
 Rcpp::NumericVector exeCluster(Rcpp::DataFrame samples, double tdist){
   vector<pair<double,double>> samP=getPairVec0(samples);
   vector<int> clsInf=clustering(samP,tdist);

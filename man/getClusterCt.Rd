@@ -44,5 +44,5 @@ clscenters=getClusterCt(samplePnt,clusterId)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ ~cluster }% use one of  RShowDoc("KEYWORDS")
-\keyword{ ~union-find }% __ONLY ONE__ keyword per line
+\keyword{ cluster }% use one of  RShowDoc("KEYWORDS")
+\keyword{ union-find }% __ONLY ONE__ keyword per line

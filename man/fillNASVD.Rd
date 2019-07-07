@@ -47,5 +47,5 @@ for(col in cols){
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ ~fillNASVD }% use one of  RShowDoc("KEYWORDS")
-\keyword{ ~missing }% __ONLY ONE__ keyword per line
+\keyword{ fillNASVD }% use one of  RShowDoc("KEYWORDS")
+\keyword{ missing }% __ONLY ONE__ keyword per line

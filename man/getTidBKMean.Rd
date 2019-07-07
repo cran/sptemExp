@@ -27,3 +27,5 @@ bkRes=getTidBKMean(spointspre,countylayer,regionName,tarF="d91",n=2)
 }
 
 }
+
+\keyword{ kriging }

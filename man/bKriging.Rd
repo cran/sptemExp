@@ -66,3 +66,5 @@ exp(krigeMean)
 }
 
 }
+
+\keyword{kriging}

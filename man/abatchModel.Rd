@@ -53,5 +53,4 @@ abatchModel(trainsample,bnd,formulaStrs,1,1,"tid",tids,modelPath,"siteid","date"
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ ~kwd1 }% use one of  RShowDoc("KEYWORDS")
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+\keyword{ batchmodel }% use one of  RShowDoc("KEYWORDS")

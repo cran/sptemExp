@@ -26,5 +26,5 @@ raster::plot(praster,breaks=breakpoints,col=colors,
     main=title,xlab=paste("Shandong Province, China (",dtStr,")",sep=""))
 
 }
-\keyword{ ~colorCusGrinf }% use one of  RShowDoc("KEYWORDS")
-\keyword{ ~raster }% __ONLY ONE__ keyword per line
+\keyword{ colorCusGrinf }% use one of  RShowDoc("KEYWORDS")
+\keyword{ raster }% __ONLY ONE__ keyword per line

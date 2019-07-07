@@ -60,5 +60,5 @@ parSpModel(trainsample,bnd,formulaStrs,tidF="tid",
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ ~bootstrap aggregate }% use one of  RShowDoc("KEYWORDS")
-\keyword{ ~ensemble learning }% __ONLY ONE__ keyword per line
+\keyword{ bootstrap_aggregate }% use one of  RShowDoc("KEYWORDS")
+\keyword{ ensemble_learning }% __ONLY ONE__ keyword per line

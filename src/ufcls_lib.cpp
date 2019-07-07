@@ -36,6 +36,47 @@ bool unionP(int a,int b,vector<int>& p){
   return true;
 }
 
+distQ getDistsInf1D(vector<double> & pnts){
+  distQ res;
+  for(auto i=0;i<pnts.size()-1;i++) {
+    for (auto j = i + 1; j < pnts.size(); j++) {
+      double dist = abs(pnts[i] - pnts[j]) ;
+      distPt ele = {dist, make_pair(i, j)};
+      res.push(ele);
+    }
+  }
+  return res;
+}
+
+vector<int> clustering1D(vector<double> & pnts, double tarDist){
+  distQ dQ=getDistsInf1D(pnts);
+  vector<int> p;
+  for(auto i=0;i<pnts.size();i++){
+    p.push_back(i);
+  }
+  int cls=p.size();
+  //cout<<dQ.top().first<<endl;
+  while(!dQ.empty() && dQ.top().first<=tarDist){
+    distPt ele=dQ.top();
+    dQ.pop();
+    pair<int,int> apnt=ele.second;
+    if(unionP(apnt.first,apnt.second,p))
+      cls--;
+  }
+  unordered_map<int,int> cindexMap;
+  int nclsInex=1;
+  for(auto i=0;i<p.size();i++){
+    if(cindexMap.find(p[i]) == cindexMap.end()){
+      cindexMap[p[i]]=nclsInex;
+      p[i]=nclsInex;
+      nclsInex++;
+    }else{
+      p[i]=cindexMap[p[i]];
+    }
+  }
+  return p;
+}
+
 distQ getDistsInf(vector<pair<double,double>> & pnts){
   distQ res;
   for(auto i=0;i<pnts.size()-1;i++) {
@@ -77,6 +118,8 @@ vector<int> clustering(vector<pair<double,double>> & pnts, double tarDist){
   }
   return p;
 }
+
+
 
 vector<pair<int,pair<double,double>>> getClsCenter1(vector<pair<double,double>> & pnts, vector<int> & cls){
   map<int,vector<int>> clsMap;

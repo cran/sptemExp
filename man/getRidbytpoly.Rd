@@ -31,3 +31,4 @@ getRidbytpoly(tpolys,pntlayer,isnearest)
   rids=getRidbytpoly(res$tpolys,x)
 
 }
+\keyword{ Thiessen_polygon }

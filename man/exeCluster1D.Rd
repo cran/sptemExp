@@ -1,5 +1,5 @@
-\name{exeCluster}
-\alias{exeCluster}
+\name{exeCluster1D}
+\alias{exeCluster1D}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
    Efficient Clustering Using Union-Find to Obtain the Clusters for Each Sample
@@ -8,12 +8,12 @@
 This function is the first step for Adaptive Kruskal algorithm for generating aggregate centers for Thiessen polygons with the aim to obtain the cluster id for each sample point.
 }
 \usage{
-exeCluster(samples, tdist)
+exeCluster1D(samples, tdist)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{samples}{
-Data frame for samples with the columns of coordinates (column name: x and y)
+Vector for samples with single vals
 }
   \item{tdist}{
 The target distance for generation of the clusters.  If the minimun distance between any two samples respectively from two different clusters is bigger than tdist, clustering stops and return the results.
@@ -38,9 +38,10 @@ Lianfa Li lspatial@gmail.com
 \code{\link{getClusterCt}}, ~~~
 }
 \examples{
-samplePnt=data.frame(x=runif(100,1,100),y=runif(100,1,100))
-clusterId=exeCluster(samplePnt,10)
+samplePnt=runif(100,1,100)
+clusterId=exeCluster1D(samplePnt,10)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ cluster }% use one of  RShowDoc("KEYWORDS")
+\keyword{ clusterid }% use one of  RShowDoc("KEYWORDS")
+
